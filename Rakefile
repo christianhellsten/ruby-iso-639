@@ -5,10 +5,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "iso639"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{ISO-639 language codes for Ruby}
+    gem.description = %Q{ISO-639 language codes for Ruby}
     gem.email = "christian.hellsten@gmail.com"
-    gem.homepage = "http://github.com/christianhellsten/iso639"
+    gem.homepage = "http://github.com/christianhellsten/ruby-iso-639"
     gem.authors = ["Christian Hellsten"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings

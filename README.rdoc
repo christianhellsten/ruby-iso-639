@@ -1,6 +1,11 @@
 = iso639
 
-Description goes here.
+A Ruby library for retrieving ISO-639 language codes from loc.gov. See http://loc.gov/standards/iso639-2/ for details.
+
+== Usage
+
+  require 'iso639'
+  ISO639.codes
 
 == Note on Patches/Pull Requests
  
