@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{iso639}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christian Hellsten"]
   s.date = %q{2010-12-06}
   s.description = %q{ISO-639 language codes for Ruby}
-  s.email = %q{christian@aktagon.com}
+  s.email = %q{christian.hellsten@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -23,11 +23,12 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "iso639.gemspec",
      "lib/iso639.rb",
      "test/helper.rb",
      "test/test_iso639.rb"
   ]
-  s.homepage = %q{http://github.com/christianhellsten/iso639}
+  s.homepage = %q{http://github.com/christianhellsten/ruby-iso-639}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
@@ -42,11 +43,14 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<fastercsv>, [">= 1.5.3"])
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     else
+      s.add_dependency(%q<fastercsv>, [">= 1.5.3"])
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     end
   else
+    s.add_dependency(%q<fastercsv>, [">= 1.5.3"])
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
   end
 end

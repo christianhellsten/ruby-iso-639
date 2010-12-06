@@ -10,6 +10,7 @@ begin
     gem.email = "christian.hellsten@gmail.com"
     gem.homepage = "http://github.com/christianhellsten/ruby-iso-639"
     gem.authors = ["Christian Hellsten"]
+    gem.add_dependency "fastercsv", ">= 1.5.3"
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
